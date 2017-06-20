@@ -1,0 +1,158 @@
+body {
+  min-width: 1122px;
+  min-height: 4750px;
+  margin: 0;
+  padding: 0;
+
+  background: #000000 url("../img/nerds-catalog.jpg") no-repeat 50% 3px;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.container {
+  width: 880px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.main-header {
+  padding-top: 27px;
+  margin-bottom: 85px;
+  border-bottom: 1px solid white;  /* Временно - потом удалить! */
+}
+
+.header-logo {
+  margin-right: 20px;
+  float: left;
+  width: 140px;
+  min-height: 55px; /* Временно - потом удалить! */
+}
+
+.main-navigation {
+  float: left;
+  width: 400px;
+  margin-left: 160px;
+  min-height: 55px; /* Временно - потом удалить! */
+}
+
+.shop-cart {
+  float: right;
+  width: 100px;
+  min-height: 55px; /* Временно - потом удалить! */
+}
+
+.main-slider {
+  margin-top: 50px;
+  margin-bottom: 40px;
+  min-height: 260px; /* Временно - потом удалить! */
+}
+
+.header-title {
+  margin-top: 75px;
+  margin-bottom: 80px;
+  min-height: 85px; /* Временно - потом удалить! */
+}
+
+.features {
+  padding-bottom: 80px;
+}
+
+.features-item {
+  float: left;
+  width: 240px;
+  margin-right: 80px;
+  min-height: 300px; /* Временно - потом удалить! */
+}
+
+.features-item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.index-content-top {
+  padding-top: 60px;
+  margin-bottom: 50px;
+}
+
+.index-content-top-left {
+  float: left;
+  width: 620px;
+  min-height: 140px; /* Временно - потом удалить! */
+}
+
+.index-content-top-right {
+  float: right;
+  width: 240px;
+  min-height: 140px; /* Временно - потом удалить! */
+}
+
+.index-content-bottom {
+  padding-bottom: 75px;
+}
+
+.index-content-bottom-left {
+  float: left;
+  width: 620px;
+  min-height: 150px; /* Временно - потом удалить! */
+}
+
+.index-content-bottom-right {
+  float: right;
+  width: 240px;
+  min-height: 150px; /* Временно - потом удалить! */
+}
+
+.clients {
+  margin-bottom: 85px;
+  min-height: 170px; /* Временно - потом удалить! */
+}
+
+.catalog-filters {
+  float: left;
+  width: 240px;
+  margin-right: 80px;
+  min-height: 730px; /* Временно - потом удалить! */
+}
+
+.catalog-gallery {
+  float: right;
+  width: 560px;
+  min-height: 1130px; /* Временно - потом удалить! */
+}
+
+.shop-content {
+  border-bottom: 1px solid white;
+  margin-bottom: 75px;
+}
+
+.footer-map {
+  margin-bottom: 75px;
+  min-height: 415px; /* Временно - потом удалить! */
+  border-top: 1px solid white; /* Временно - потом удалить! */
+}
+
+.contacts {
+  width: 250px;
+  margin-top: 85px;
+  min-height: 240px; /* Временно - потом удалить! */
+}
+
+.main-footer {
+  margin-bottom: 75px;
+}
+
+.footer-social {
+  float: left;
+  width: 240px;
+  margin-right: 80px;
+  min-height: 70px; /* Временно - потом удалить! */
+}
+
+.footer-text {
+  float: left;
+  width: 560px;
+  min-height: 70px; /* Временно - потом удалить! */
+}
