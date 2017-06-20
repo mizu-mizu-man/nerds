@@ -2,114 +2,121 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>Студия «Nerds»</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Студия &laquo;Nerds&raquo;</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="main-header">
       <div class="container clearfix">
         <div class="header-logo">
-          <img src="" width="" height="" alt="Студия «Nerds»">
+          <img src="" width="" height="" alt="Студия &laquo;Nerds&raquo;">
         </div>
         <nav class="main-navigation">
           <ul>
             <li><a href="#">Студия</a></li>
             <li><a href="#">Клиенты</a></li>
-            <li><a href="#">Магазин</a></li>
+            <li><a href="catalog.html">Магазин</a></li>
             <li><a href="#">Контакты</a></li>
           </ul>
         </nav>
         <div class="shop-cart">
-          <a href="#">Корзина</a>
+          <a class="cart" href="#">Корзина</a>
         </div>
-      </div>
-      <div class="main-slider container">
+        <div class="main-slider">
+        </div>
       </div>
     </header>
 
     <main class="container">
-      <section class="index-features clearfix">
-        <div class="index-features-item">
+      <section class="features clearfix">
+        <div class="features-item">
           <img src="" width="" height="" alt="Веб-сайты">
-          <h2>Веб-сайты</h2>
+          <h2 class="features-title">Веб-сайты</h2>
           <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-          <a href="#" class="btn red">Заказать</a>
+          <a href="#" class="btn btn-red">Заказать</a>
         </div>
-        <div class="index-features-item">
+        <div class="features-item">
           <img src="" width="" height="" alt="Приложения">
-          <h2>Приложения</h2>
+          <h2 class="features-title">Приложения</h2>
           <p>Покорите top-10 приложений в AppStore и Google Play</p>
-          <a href="#" class="btn green">Заказать</a>
+          <a href="#" class="btn btn-green">Заказать</a>
         </div>
-        <div class="index-features-item">
+        <div class="features-item">
           <img src="" width="" height="" alt="Презентации">
-          <h2>Презентации</h2>
+          <h2 class="features-title">Презентации</h2>
           <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-          <a href="#" class="btn yellow">Заказать</a>
+          <a href="#" class="btn btn-yellow">Заказать</a>
         </div>
       </section>
-      <hr class="hr-1">
-      <section class="index-content clearfix">
-        <div class="index-content-left">
-          <b>Мы - маленькая, но гордая дизайн-студия из Краснодара.</b>
+
+      <section class="index-content-top clearfix">
+        <div class="index-content-top-left">
+          <h2>Мы - маленькая, но гордая дизайн-студия из Краснодара.</h2>
           <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчёт выше креатива. Работаем не покладая рук, как роботы.</p>
-          <p class="index-content-list-title">Выполняем заказы на разработку:</p>
-          <ul>
+        </div>
+        <div class="index-content-top-right">
+          <img src="" width="" height="" alt="">
+          <div class="content-logo-title">
+            <span>Since 2004</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="index-content-bottom clearfix">
+        <div class="index-content-bottom-left">
+          <h3>Выполняем заказы на разработку:</h3>
+          <ul class="custom-list-1">
             <li>Веб-сайтов любой сложности</li>
-            <li>Мобильных приложений для Android и iOS</li>
+            <li>Мобильных приложений для iOS и Android</li>
             <li>Слайдшоу и видео для коп=рпоративных презентаций</li>
           </ul>
         </div>
-        <div class="index-content-right">
-          <div class="index-content-right-logo">
-            <img src="" width="" height="" alt="">
-          </div>
-          <p class="index-content-list-title">Как мы работаем:</p>
-          <ul>
+        <div class="index-content-bottom-right">
+          <h3>Как мы работаем:</h3>
+          <ul class="custom-list-1">
             <li>С самоотдачей 146%</li>
             <li>Соблюдая сроки на 100%</li>
             <li>По предоплате 50%</li>
           </ul>
         </div>
       </section>
-      <hr class="hr-2">
+
       <section class="clients clearfix">
         <div class="clients-logo">
-          <img src="" width="" height="" alt="">
+          <a href="#"><img src="" width="" height="" alt=""></a>
         </div>
         <div class="clients-logo">
-          <img src="" width="" height="" alt="">
+          <a href="#"><img src="" width="" height="" alt=""></a>
         </div>
         <div class="clients-logo">
-          <img src="" width="" height="" alt="">
+          <a href="#"><img src="" width="" height="" alt=""></a>
         </div>
       </section>
-      <hr class="hr-3">
     </main>
 
     <footer class="footer-map">
       <div class="container">
-        <div class="footer-map-adres">
+        <div class="contacts">
           <b>Nёrds Design Studio</b>
           <p>191186, Санкт-Петербург,<br>
           ул. Б. Конюшенная, д. 19/8</p>
           <p>тел. +7 (812) 275-75-75</p>
-          <a href="#" class="btn red">Напишите нам</a>
+          <a href="#" class="btn btn-red">Напишите нам</a>
         </div>
       </div>
     </footer>
 
     <footer class="main-footer">
       <div class="container clearfix">
-        <div class="social">
-          <div class="social-btn-vk"></div>
-          <div class="social-btn-face"></div>
-          <div class="social-btn-insta"></div>
-        </div>
-        <div class="footer-text">
+        <section class="footer-social">
+          <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+          <a class="social-btn social-btn-insta" href="#">Инстаграм</a>
+        </section>
+        <section class="footer-text">
           <b>Давайте дружить, это выгодно!</b>
           <p>Скидка 10% для друзей из социальных сетей.</p>
-        </div>
+        </section>
       </div>
     </footer>
   </body>

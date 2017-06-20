@@ -2,14 +2,14 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>Студия «Nerds»</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Добро пожаловать в магазин готовых макетов</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="main-header">
       <div class="container clearfix">
         <div class="header-logo">
-          <img src="" width="" height="" alt="Студия «Nerds»">
+          <img src="" width="" height="" alt="Студия &laquo;Nerds&raquo;">
         </div>
         <nav class="main-navigation">
           <ul>
@@ -20,50 +20,92 @@
           </ul>
         </nav>
         <div class="shop-cart">
-          <a href="#">Корзина</a>
+          <a class="cart" href="#">Корзина</a>
         </div>
-      </div>
-      <div class="catalog-header container">
+        <div class="header-title">
+          <h1>Добро пожаловать в магазин готовых макетов</h1>
+        </div>
       </div>
     </header>
 
     <main class="container clearfix">
-      <form class="catalog-selector">
-        <fieldset class="selector-grid">
+      <form class="catalog-filters">
+        <fieldset class="filter-grid">
           <legend>Сетка:</legend>
+          <label>
+            <input type="radio" name="grid-item" value="adaptive" checked>
+            Адаптивная
+          </label>
+          <label>
+            <input type="radio" name="grid-item" value="fixed">
+            Фиксированная
+          </label>
+          <label>
+            <input type="radio" name="grid-item" value="rubber">
+            Резиновая
+          </label>
         </fieldset>
-        <fieldset class="selector-features">
+        <fieldset class="filter-features">
           <legend>Особенности:</legend>
+          <label class="filter-checkbox">
+            <input type="checkbox" name="slider" id="slider" checked>
+            <span class="checkbox-indicator"></span>
+            Слайдер
+          </label>
+          <label class="filter-checkbox">
+            <input type="checkbox" name="advantages" id="advantages">
+            <span class="checkbox-indicator"></span>
+            Блок преимуществ
+          </label>
+          <label class="filter-checkbox">
+            <input type="checkbox" name="news" id="news" checked>
+            <span class="checkbox-indicator"></span>
+            Новости
+          </label>
+          <label class="filter-checkbox">
+            <input type="checkbox" name="gallery" id="gallery">
+            <span class="checkbox-indicator"></span>
+            Галлерея
+          </label>
+          <label class="filter-checkbox">
+            <input type="checkbox" name="cart" id="cart">
+            <span class="checkbox-indicator"></span>
+            Корзина
+          </label>
         </fieldset>
         <button class="btn" type="button">Показать</button>
       </form>
       <div class="catalog-gallery">
-        <div class="catalog-sorting">
+        <div class="catalog-sorting clearfix">
           <span>Сортировать:</span>
-          <ul>
-            <li><a href="#">По цене</a></li>
+          <ul class="sort-buttons">
+            <li sort="sort-current"><span>По цене</span></li>
             <li><a href="#">По типу</a></li>
             <li><a href="#">По функционалу</a></li>
+            <li><a href="#" class="arrow arrow-down arrow-current">Вниз</a></li>
+            <li><a href="#" class="arrow arrow-up">Вверх</a></li>
           </ul>
         </div>
-        <article class="gallery-item">
-          <img src="" width="" height="" alt="" title="">
-        </article>
-        <article class="gallery-item">
-          <img src="" width="" height="" alt="" title="">
-        </article>
-        <article class="gallery-item">
-          <img src="" width="" height="" alt="" title="">
-        </article>
-        <article class="gallery-item">
-          <img src="" width="" height="" alt="" title="">
-        </article>
-        <article class="gallery-item">
-          <img src="" width="" height="" alt="" title="">
-        </article>
-        <article class="gallery-item">
-          <img src="" width="" height="" alt="" title="">
-        </article>
+        <div class="gallery-items">
+          <article class="gallery-item">
+            <img src="" width="" height="" alt="" title="">
+          </article>
+          <article class="gallery-item">
+            <img src="" width="" height="" alt="" title="">
+          </article>
+          <article class="gallery-item">
+            <img src="" width="" height="" alt="" title="">
+          </article>
+          <article class="gallery-item">
+            <img src="" width="" height="" alt="" title="">
+          </article>
+          <article class="gallery-item">
+            <img src="" width="" height="" alt="" title="">
+          </article>
+          <article class="gallery-item">
+            <img src="" width="" height="" alt="" title="">
+          </article>
+        </div>
         <div class="catalog-paginator">
           <a class="btn active-page" href="#">1</a>
           <a class="btn" href="#">2</a>
@@ -75,27 +117,27 @@
 
     <footer class="footer-map">
       <div class="container">
-        <div class="footer-map-adres">
+        <div class="contacts">
           <b>Nёrds Design Studio</b>
           <p>191186, Санкт-Петербург,<br>
           ул. Б. Конюшенная, д. 19/8</p>
           <p>тел. +7 (812) 275-75-75</p>
-          <a href="#" class="btn red">Напишите нам</a>
+          <a href="#" class="btn btn-red">Напишите нам</a>
         </div>
       </div>
     </footer>
 
     <footer class="main-footer">
       <div class="container clearfix">
-        <div class="social">
-          <div class="social-btn-vk"></div>
-          <div class="social-btn-face"></div>
-          <div class="social-btn-insta"></div>
-        </div>
-        <div class="footer-text">
+        <section class="footer-social">
+          <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+          <a class="social-btn social-btn-insta" href="#">Инстаграм</a>
+        </section>
+        <section class="footer-text">
           <b>Давайте дружить, это выгодно!</b>
           <p>Скидка 10% для друзей из социальных сетей.</p>
-        </div>
+        </section>
       </div>
     </footer>
   </body>
