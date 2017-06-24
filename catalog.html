@@ -6,6 +6,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/outlines.css">
   </head>
   <body>
     <header class="main-header">
@@ -32,7 +33,7 @@
 
     <main class="shop-content">
       <div class="container clearfix">
-        <form class="catalog-filters">
+        <form class="catalog-filters" action="#" method="get">
           <fieldset class="filter-grid">
             <legend>Сетка:</legend>
             <label>
@@ -85,28 +86,58 @@
               <li sort="sort-current"><span>По цене</span></li>
               <li><a href="#">По типу</a></li>
               <li><a href="#">По функционалу</a></li>
-              <li><a href="#" class="arrow arrow-down arrow-current">Вниз</a></li>
-              <li><a href="#" class="arrow arrow-up">Вверх</a></li>
+              <li><a href="#" class="arrow-down arrow-current">Вниз</a></li>
+              <li><a href="#" class="arrow-up">Вверх</a></li>
             </ul>
           </div>
           <div class="gallery-items">
             <article class="gallery-item">
-              <img src="" width="" height="" alt="" title="">
+              <img src="img/item-aviator.jpg" height="240" width="240" alt="Aviator">
+              <div class="gallery-item-description">
+                <h1>Aviator</h1>
+                <p>Интернет-магазин с личным кабинетом</p>
+                <a class="btn btn-red" href="#">10000 р.</a>
+              </div>
             </article>
             <article class="gallery-item">
-              <img src="" width="" height="" alt="" title="">
+              <img src="img/item-sunset.jpg" height="240" width="240" alt="Sunset">
+              <div class="gallery-item-description">
+                <h1>Sunset</h1>
+                <p>Интернет-магазин с личным кабинетом</p>
+                <a class="btn btn-red" href="#">10000 р.</a>
+              </div>
             </article>
             <article class="gallery-item">
-              <img src="" width="" height="" alt="" title="">
+              <img src="img/item-forte.jpg" height="240" width="240" alt="Forte">
+              <div class="gallery-item-description">
+                <h1>Forte</h1>
+                <p>Интернет-магазин с личным кабинетом</p>
+                <a class="btn btn-red" href="#">10000 р.</a>
+              </div>
             </article>
             <article class="gallery-item">
-              <img src="" width="" height="" alt="" title="">
+              <img src="img/item-marquee.jpg" height="240" width="240" alt="Marquee">
+              <div class="gallery-item-description">
+                <h1>Marquee</h1>
+                <p>Интернет-магазин с личным кабинетом</p>
+                <a class="btn btn-red" href="#">10000 р.</a>
+              </div>
             </article>
             <article class="gallery-item">
-              <img src="" width="" height="" alt="" title="">
+              <img src="img/item-avenue.jpg" height="240" width="239" alt="Avenue">
+              <div class="gallery-item-description">
+                <h1>Avenue</h1>
+                <p>Интернет-магазин с личным кабинетом</p>
+                <a class="btn btn-red" href="#">10000 р.</a>
+              </div>
             </article>
             <article class="gallery-item">
-              <img src="" width="" height="" alt="" title="">
+              <img src="img/item-dovetail.jpg" height="240" width="239" alt="Dovetail">
+              <div class="gallery-item-description">
+                <h1>Dovetail</h1>
+                <p>Интернет-магазин с личным кабинетом</p>
+                <a class="btn btn-red" href="#">10000 р.</a>
+              </div>
             </article>
           </div>
           <div class="catalog-paginator">
@@ -119,19 +150,18 @@
       <div>
     </main>
 
-    <footer class="footer-map">
-      <div class="container">
-        <div class="contacts">
-          <b>Nёrds Design Studio</b>
-          <p>191186, Санкт-Петербург,<br>
-          ул. Б. Конюшенная, д. 19/8</p>
-          <p>тел. +7 (812) 275-75-75</p>
-          <a href="#" class="btn btn-red">Напишите нам</a>
+    <footer class="main-footer">
+      <div class="footer-map">
+        <div class="container">
+          <div class="contacts">
+            <b>Nёrds Design Studio</b>
+            <p>191186, Санкт-Петербург,<br>
+            ул. Б. Конюшенная, д. 19/8</p>
+            <p>тел. +7 (812) 275-75-75</p>
+            <a href="#" class="btn btn-red">Напишите нам</a>
+          </div>
         </div>
       </div>
-    </footer>
-
-    <footer class="main-footer">
       <div class="container clearfix">
         <section class="footer-social">
           <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
