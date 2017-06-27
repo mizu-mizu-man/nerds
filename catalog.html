@@ -6,13 +6,15 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/outlines.css">
+    <!-- <link rel="stylesheet" href="css/outlines.css"> -->
   </head>
-  <body>
+  <body class="inner-page">
     <header class="main-header">
       <div class="container clearfix">
         <div class="header-logo">
-          <img src="" width="" height="" alt="Студия &laquo;Nerds&raquo;">
+          <a href="index.html">
+            <img src="img/header-logo.png" width="139" height="56" alt="Студия &laquo;Nerds&raquo;">
+          </a>
         </div>
         <nav class="main-navigation">
           <ul>
@@ -23,7 +25,7 @@
           </ul>
         </nav>
         <div class="shop-cart">
-          <a class="cart" href="#">Корзина</a>
+        <a class="cart" href="#"><i class="icon-basket"></i>Корзина</a>
         </div>
       </div>
       <div class="container header-title">
@@ -34,44 +36,67 @@
     <main class="shop-content">
       <div class="container clearfix">
         <form class="catalog-filters" action="#" method="get">
-          <fieldset class="filter-grid">
+          <fieldset>
+            <legend>Стоимость:</legend>
+            <div class="range-filter">
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar" style="width: 70%;"></div>
+                </div>
+                <div class="toggle min-toggle"></div>
+                <div class="toggle max-toggle"></div>
+              </div>
+              <div class="price-controls">
+                <label class="min-price">ОТ
+                  <input type="text" name="" value="0">
+                </label>
+                <label class="max-price">ДО
+                  <input type="text" name="" value="15 000">
+                </label>
+              </div>
+            </div>
+          </fieldset>
+          <fieldset>
             <legend>Сетка:</legend>
             <label>
               <input type="radio" name="grid-item" value="adaptive" checked>
+              <span class="radio-indicator"></span>
               Адаптивная
             </label>
             <label>
               <input type="radio" name="grid-item" value="fixed">
+              <span class="radio-indicator"></span>
               Фиксированная
             </label>
             <label>
               <input type="radio" name="grid-item" value="rubber">
+              <span class="radio-indicator"></span>
               Резиновая
             </label>
           </fieldset>
-          <fieldset class="filter-features">
+          <fieldset>
             <legend>Особенности:</legend>
-            <label class="filter-checkbox">
+            <label>
               <input type="checkbox" name="slider" id="slider" checked>
               <span class="checkbox-indicator"></span>
               Слайдер
             </label>
-            <label class="filter-checkbox">
+            <label>
               <input type="checkbox" name="advantages" id="advantages">
               <span class="checkbox-indicator"></span>
               Блок преимуществ
             </label>
-            <label class="filter-checkbox">
+            <label>
               <input type="checkbox" name="news" id="news" checked>
               <span class="checkbox-indicator"></span>
               Новости
             </label>
-            <label class="filter-checkbox">
+            <label>
               <input type="checkbox" name="gallery" id="gallery">
               <span class="checkbox-indicator"></span>
               Галлерея
             </label>
-            <label class="filter-checkbox">
+            <label>
               <input type="checkbox" name="cart" id="cart">
               <span class="checkbox-indicator"></span>
               Корзина
@@ -81,14 +106,16 @@
         </form>
         <div class="catalog-gallery">
           <div class="catalog-sorting clearfix">
-            <span>Сортировать:</span>
-            <ul class="sort-buttons">
-              <li class="sort-current"><span>По цене</span></li>
-              <li><a href="#">По типу</a></li>
-              <li><a href="#">По функционалу</a></li>
-              <li><a href="#" class="arrow-down arrow-current">Вниз</a></li>
-              <li><a href="#" class="arrow-up">Вверх</a></li>
-            </ul>
+            <span class="sort-title">Сортировать:</span>
+            <div class="sort-buttons">
+              <a class="sort-current" href="#">По цене</a>
+              <a href="#">По типу</a></li>
+              <a href="#">По функционалу</a></li>
+            </div>
+            <div class="sort-switches">
+              <a class="switch-down switch-active" href="#"></a>
+              <a class="switch-up" href="#"></a>
+            </div>
           </div>
           <div class="gallery-items">
             <article class="gallery-item">
