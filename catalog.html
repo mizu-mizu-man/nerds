@@ -207,5 +207,26 @@
         </section>
       </div>
     </footer>
+
+    <div class="modal-contacts">
+      <button class="modal-contacts-close" type="button" title="Закрыть">Закрыть</button>
+      <form class="contacts-form" action="#" method="post">
+        <div class="contacts-form-up clearfix">
+          <div class="up-name">
+            <label for="your-name">Ваше имя:</label>
+            <input type="text" name="name" placeholder="Представьтесь, пожалуйста" id="your-name">
+          </div>
+          <div class="up-email">
+            <label for="your-email">Ваш e-mail:</label>
+            <input type="text" name="email" placeholder="Для отправки ответа" id="your-email">
+          </div>
+        </div>
+        <label for="your-text">Текст письма:</label>
+        <textarea name="text" id="your-text" placeholder="В свободной форме"></textarea>
+        <button class="btn" type="submit" title="Отправить">Отправить</button>
+      </form>
+    </div>
+
+    <div class="modal-overlay"></div>
   </body>
 </html>

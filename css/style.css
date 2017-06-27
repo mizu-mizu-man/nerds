@@ -953,3 +953,134 @@ margin: 0;
 padding: 0;
 margin-top: 8px;
 }
+
+/* ===== POPUP WINDOWS ===== */
+.modal-contacts {
+  display: none;
+  position: fixed;
+  z-index: 30;
+  padding: 50px 80px;
+  padding-right: 90px;
+  top: 50%;
+  left: 50%;
+  width: 460px;
+  min-height: 316px;
+  margin-top: -208px;
+  margin-left: -315px;
+  box-shadow: 0 20px 40px rgba(0, 1, 1, 0.75);
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.modal-overlay {
+  display: none;
+  position: fixed;
+  z-index: 20;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.modal-contacts-close {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  width: 41px;
+  height: 41px;
+  background-color: #fb565a;
+  border-radius: 50%;
+  font-size: 0;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+}
+
+.modal-contacts-close::before,
+.modal-contacts-close::after {
+  content: "";
+  position: absolute;
+  top: 18px;
+  left: 8px;
+  width: 26px;
+  height: 5px;
+  background-color: #ffffff;
+  border-radius: 1px;
+}
+
+.modal-contacts-close:hover {
+  background-color: #d6494d;
+}
+
+.modal-contacts-close:active {
+  background-color: #b63538;
+}
+
+.modal-contacts-close::before {
+  transform: rotate(45deg);
+}
+
+.modal-contacts-close::after {
+  transform: rotate(-45deg);
+}
+
+.contacts-form .btn {
+  width: 100%;
+}
+
+.contacts-form-up {
+  margin-bottom: 20px;
+}
+
+.contacts-form-up .up-name {
+  float: left;
+  width: 220px;
+}
+
+.contacts-form-up .up-email {
+  float: right;
+  width: 220px;
+}
+
+.contacts-form label {
+  display: block;
+  font-size: 16px;
+  line-height: 18px;
+  margin-bottom: 9px;
+}
+
+.contacts-form input[type="text"],
+.contacts-form textarea {
+  border: 2px solid #d7dcde;
+  border-radius: 2px;
+  font-family: 'Roboto', 'Arial', sans-serif;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 500;
+  padding: 8px 14px;
+  text-transform: uppercase;
+  color: #000000;
+  outline: none;
+}
+
+.contacts-form input[type="text"] {
+  width: 188px;
+}
+
+.contacts-form textarea {
+  height: 102px;
+  margin-bottom: 48px;
+  resize: none;
+  width: 428px;
+}
+
+.contacts-form input[type="text"]:hover,
+.contacts-form textarea:hover {
+  border-color: #a2a9ac;
+}
+
+.contacts-form input[type="text"]:focus,
+.contacts-form textarea:focus {
+  border-color: #56bffb;
+}
