@@ -900,32 +900,45 @@ color: #00ca74;
 }
 
 .social-btn {
+  position: relative;
   display: inline-block;
   background-color: #e1e1e1;
-  background-image: url("../img/sprite.png");
-  background-repeat: no-repeat;
   border-radius: 50%;
   height: 62px;
   width: 62px;
   margin-right: 27px;
   text-decoration: none;
   vertical-align: middle;
+  text-align: center;
 }
 
 .social-btn:nth-child(3n) {
   margin-right: 0;
 }
 
-.social-btn-vk {
-  background-position: -2px -607px;
+.social-btn-vk::before,
+.social-btn-fb::before,
+.social-btn-insta::before {
+  position: absolute;
+  content: "";
+  font-family: "symbols-nerds";
+  font-size: 24px;
+  color: #ffffff;
+  top: 20px;
+  left: 0;
+  width: 62px;
 }
 
-.social-btn-fb {
-  background-position: 5px -488px;
+.social-btn-vk::before {
+  content: "\76";
 }
 
-.social-btn-insta {
-  background-position: 1px -549px;
+.social-btn-fb::before {
+  content: "\66";
+}
+
+.social-btn-insta::before {
+  content: "\1f4f7";
 }
 
 .social-btn:hover {
