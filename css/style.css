@@ -1,8 +1,14 @@
-@keyframes bounce {
+@keyframes bounce-x {
   0%   { transform: translateX(-5000px); }
   70%  { transform: translateX(30px);    }
   90%  { transform: translateX(-10px);   }
   100% { transform: translateX(0);       }
+}
+
+@keyframes shake {
+  0%, 100%                { transform: translateX(0);     }
+  10%, 30%, 50%, 70%, 90% { transform: translateX(-10px); }
+  20%, 40%, 60%, 80%      { transform: translateX(10px);  }
 }
 
 @font-face {
@@ -52,7 +58,6 @@ body {
   font-size: 16px;
   line-height: 22px;
   color: #000000;
-  /*background: #000000 url("../img/nerds-catalog.jpg") no-repeat 50% 0px;*/
 }
 
 .clearfix::after {
@@ -198,8 +203,7 @@ img {
   width: 880px;
   height: 310px;
   margin: 0 auto;
-  margin-top: 40px;
-  margin-bottom: 40px;
+  margin-top: 30px;
 }
 
 .main-slider input[type="radio"] {
@@ -298,25 +302,26 @@ img {
 
 #btn-1:checked ~ .slides .slide:nth-child(1) {
   display: block;
-  animation: bounce 0.6s;
+  animation: bounce-x 0.6s;
 }
 
 #btn-2:checked ~ .slides .slide:nth-child(2) {
   display: block;
-  animation: bounce 0.6s;
+  animation: bounce-x 0.6s;
 }
 
 #btn-3:checked ~ .slides .slide:nth-child(3) {
   display: block;
-  animation: bounce 0.6s;
+  animation: bounce-x 0.6s;
 }
 
 .header-title {
+  margin-top: 55px;
+  margin-bottom: 80px;
 }
 
 .header-title h1 {
   margin: 0;
-  margin-bottom: 85px;
   padding: 0 100px;
   text-align: center;
   text-transform: uppercase;
@@ -1103,6 +1108,15 @@ margin-top: 8px;
   color: #000000;
 }
 
+.modal-contacts-show {
+  display: block;
+  animation: bounce-x 0.6s;
+}
+
+.modal-error {
+  animation: shake 0.6s;
+}
+
 .modal-overlay {
   display: none;
   position: fixed;
@@ -1112,6 +1126,10 @@ margin-top: 8px;
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
+}
+
+.modal-overlay-show {
+  display: block;
 }
 
 .modal-contacts-close {
