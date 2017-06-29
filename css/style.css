@@ -976,9 +976,17 @@ color: #00ca74;
 
 .footer-map {
   margin-bottom: 75px;
-  height: 415px;
+  height: 416px;
   padding-top: 1px;
-  background: #b5b5b5 url("../img/footer-map.jpg") no-repeat 50% 50%;
+  background: url("../img/footer-map.jpg") no-repeat 50% 50%;
+}
+
+.footer-map .container {
+  position: relative;
+}
+
+.footer-map iframe {
+  position: absolute;
 }
 
 .contacts {
