@@ -163,10 +163,6 @@ img {
   margin-top: 17px;
 }
 
-.shop-cart .icon-basket {
-  margin-right: 8px;
-}
-
 .shop-cart .cart {
   position: relative;
   display: block;
@@ -179,19 +175,31 @@ img {
   text-decoration: none;
 }
 
+.shop-cart .icon-basket {
+  margin-right: 8px;
+  opacity: 0.3;
+}
+
 .shop-cart .active {
   cursor: default;
 }
 
 .main-navigation a:hover,
-.cart:hover {
+.cart:hover,
+.cart:hover .icon-basket {
+  opacity: 1;
   color: #fb565a;
 }
 
 .main-navigation a:active,
-.cart:active {
+.cart:active,
+.cart:active .icon-basket {
   color: #000000;
   opacity: 0.4;
+}
+
+.cart:active .icon-basket {
+  opacity: 0.375;
 }
 
 .shop-cart .active:hover {
